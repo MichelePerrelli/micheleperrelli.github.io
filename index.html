@@ -6,6 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Michele Perrelli | Portfolio</title>
+    <style>
+        .project-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .project-item img {
+            width: 100px;
+            height: auto;
+            margin-left: 10px; /* Margine a sinistra per distanziare dal testo */
+        }
+
+        .project-text {
+            flex-grow: 1; /* Assicura che il testo occupi lo spazio disponibile */
+            text-align: left;
+        }
+
+        .project-item ul {
+            list-style-type: none; /* Rimuove i punti elenco */
+            padding: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -36,28 +59,40 @@
             <div class="projects-section">
                 <h3>My Projects</h3>
                 <ul>
-                    <li>
-                        <img src="image1.png" alt="Thermostatic Chamber Image" style="width: 100px; height: auto; margin-right: 10px;">
-                        <strong>Thermostatic Chamber with STM32F446RE:</strong> Developed using CubeMX and CubeIDE, with data transmission to an MQTT broker. Selected by #ETLCLab to be presented at the NeaPolis Innovation Technology Day 2023.
+                    <li class="project-item">
+                        <div class="project-text">
+                            <strong>Thermostatic Chamber with STM32F446RE:</strong> Developed using CubeMX and CubeIDE, with data transmission to an MQTT broker. Selected by #ETLCLab to be presented at the NeaPolis Innovation Technology Day 2023.
+                        </div>
+                        <img src="image1.png" alt="Thermostatic Chamber Image">
                     </li>
-                    <li>
-                        <img src="image2.png" alt="Inverted Pendulum Image" style="width: 100px; height: auto; margin-right: 10px;">
-                        <strong>Inverted Pendulum with STM32:</strong> Developed using Vscode, CubeMX, and CubeIDE.
+                    <li class="project-item">
+                        <div class="project-text">
+                            <strong>Inverted Pendulum with STM32:</strong> Developed using Vscode, CubeMX, and CubeIDE.
+                        </div>
+                        <img src="image2.png" alt="Inverted Pendulum Image">
                     </li>
-                    <li>
-                        <img src="image3.png" alt="Data Model Image" style="width: 100px; height: auto; margin-right: 10px;">
-                        <strong>Data Model:</strong> Development of a neural network for pH Neutralization.
+                    <li class="project-item">
+                        <div class="project-text">
+                            <strong>Data Model:</strong> Development of a neural network for pH Neutralization.
+                        </div>
+                        <img src="image3.png" alt="Data Model Image">
                     </li>
-                    <li>
-                        <img src="image4.png" alt="Robotic Arm Image" style="width: 100px; height: auto; margin-right: 10px;">
-                        <strong>Robotic Arm Control System:</strong> Recovery and implementation of a control system for a Katana manipulator using STM32.
+                    <li class="project-item">
+                        <div class="project-text">
+                            <strong>Robotic Arm Control System:</strong> Recovery and implementation of a control system for a Katana manipulator using STM32.
+                        </div>
+                        <img src="image4.png" alt="Robotic Arm Image">
                     </li>
-                    <li>
-                        <strong>Smart Mini-Fridge:</strong> Process automation using Power Automate, with data transmission to an MQTT broker.
+                    <li class="project-item">
+                        <div class="project-text">
+                            <strong>Smart Mini-Fridge:</strong> Process automation using Power Automate, with data transmission to an MQTT broker.
+                        </div>
                     </li>
-                    <li>
-                        <img src="image6.png" alt="ROS Simulation Image" style="width: 100px; height: auto; margin-right: 10px;">
-                        <strong>ROS Simulation:</strong> Development of a robotic simulation project using ROS, Gazebo, and RViz.
+                    <li class="project-item">
+                        <div class="project-text">
+                            <strong>ROS Simulation:</strong> Development of a robotic simulation project using ROS, Gazebo, and RViz.
+                        </div>
+                        <img src="image6.png" alt="ROS Simulation Image">
                     </li>
                 </ul>
             </div>
